@@ -1,9 +1,9 @@
 const Pool = require('pg').Pool;
 const pool = new Pool({
-    user: 'me',
+    user: 'xxxxxxxxxxxxxxxx',
     host: 'localhost',
     database: 'api',
-    password: 'password',
+    password: 'xxxxxxxxxxxxxxxxxxxx',
     port: 5432,
 });
 
@@ -17,7 +17,7 @@ const getUsers = (request, response) => {
 };
 
 const getUserById = (request, response) => {
-    const id = parseInt(request.params.id)
+    const id = parseInt(request.params.id);
 
     pool.query('SELECT * FROM users WHERE id = $1', [id], (error, results) => {
         if (error) {
