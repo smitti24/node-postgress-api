@@ -12,3 +12,5 @@ Setting up a RESTful API with Node.js and PostgreSQL
         - Dont have to open and close a client every time a query is made.
 
 
+Credit: https://blog.logrocket.com/setting-up-a-restful-api-with-node-js-and-postgresql-d96d6fc892d8/
+
